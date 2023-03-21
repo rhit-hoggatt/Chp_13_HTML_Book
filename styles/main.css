@@ -1,0 +1,97 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #034e35;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+.square {
+    background: #00801c80;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 100px;
+    text-align: center;
+}
+
+.b-left {
+    border-left: 4px solid #000000;
+}
+.b-right {
+    border-right: 4px solid #000000;
+}
+.b-top {
+    border-top: 4px solid #000000;
+}
+.b-bottom {
+    border-bottom: 4px solid #000000;
+}
+
+#newGameButton {
+    margin-top: 15px;
+    background: #00801c80;
+    color: rgb(2, 0, 0);
+    margin-left: auto;
+    grid-column: span 3;
+}
+
+#gameStateText {
+    text-align: center;
+}
+
+#gameBoard {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    height: 300px;
+    width: 300px;
+}
+
+@media (min-width: 600px) { 
+    #gameBoard {
+        height: 450px;
+        width: 450px;
+    }
+    .square {
+        font-size: 90px;
+        line-height: 140px;
+    }
+    #newGameButton{
+        font-size: 1.25em;
+    }
+ }
+@media (min-width: 800px) { 
+    #gameBoard {
+        height: 600px;
+        width: 600px;
+    }
+    .square {
+        font-size: 120px;
+        line-height: 180px;
+    }
+    #newGameButton{
+        font-size: 1.5em;
+    }
+ }
+
+ @media (min-width: 1200px){
+    #gameBoard {
+        height: 900px;
+        width: 900px;
+    }
+    .square {
+        font-size: 150px;
+        line-height: 210px;
+    }
+    #newGameButton{
+        font-size: 2em;
+    }
+ }
